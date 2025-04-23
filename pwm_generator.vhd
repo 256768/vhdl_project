@@ -18,12 +18,12 @@ begin
     begin
         if rising_edge(CLK) then
             if ENABLE = '1' then
-                if counter < PWM_WIDTH then
+                if counter <= PWM_WIDTH then
                     PWM_OUT <= '1';
                     counter <= counter + 1;
                 else
                     PWM_OUT <= '0';
-                    if counter < 20000 then -- 20ms period for servo
+                    if counter <= 20000 then -- 20ms period for servo
                         counter <= counter + 1;
                     else
                         counter <= 0;

@@ -20,11 +20,11 @@ begin
     process(BTNL, BTNR)
     begin
         if BTNL = '1' then
-            if pulse_width > 1000 then
+            if pulse_width >= 1000 then
                 pulse_width <= pulse_width - 100;
             end if;
         elsif BTNR = '1' then
-            if pulse_width < 2000 then
+            if pulse_width <= 2000  then
                 pulse_width <= pulse_width + 100;
             end if;
         end if;
@@ -33,12 +33,15 @@ begin
     process(CLK)
     begin
         if rising_edge(CLK) then
-            if BTNL = '1' or BTNR = '1' then
+            if BTNL = '1' then
                 ENABLE <= '1';
-                led_state <= "11111111";
-            else
-                ENABLE <= '0';
-                led_state <= "00000000";
+                led_state <= "11110000";
+            elsif BTNR = '1' then
+                ENABLE <= '1';
+                led_state <= "00001111";
+            else 
+                ENABLE <= '0';   
+                led_state <= "00000000";         
             end if;
         end if;
     end process;
