@@ -16,8 +16,10 @@ Develop a PWM-based servo motor controller using VHDL on FPGA that:
 ## Theoretical Background
 
 ### Servo Motor
+A servo motor is a rotary actuator that allows for precise control of angular position through pulse-width modulated (PWM) signals. It combines a DC motor, gear train, position sensor, and control circuitry in a closed-loop system.
 
 ### Pulse Width Modulation (PWM)
+PWM is a modulation technique where the width of electrical pulses is varied while keeping the frequency constant, controlling power delivery to devices.
 
 ## Implementation
 **VHDL Modules:**
