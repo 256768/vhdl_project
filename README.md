@@ -16,25 +16,15 @@ Develop a PWM-based servo motor controller using VHDL on FPGA that:
 ## Theoretical Background
 
 ### Servo Motor
-- Rotary actuator for precise angular control
-- Uses PWM signals for positioning:
-  - 1ms pulse = 0° position
-  - 1.5ms pulse = 90° position
-  - 2ms pulse = 180° position
-- Requires 50Hz signal frequency (20ms period)
 
 ### Pulse Width Modulation (PWM)
-- Modulation technique encoding information in pulse width
-- Key parameters:
-  - Frequency: Fixed at 50Hz for servos
-  - Duty cycle: Determines servo position
-  - Resolution: 100μs steps in this implementation
 
 ## Implementation
 **VHDL Modules:**
 1. `servo_controller.vhd` - Handles button inputs and pulse width adjustment
 2. `pwm_generator.vhd` - Generates 50Hz PWM signal
 3. `top_level.vhd` - Main entity connecting components
+4. `nexys-a7-50t.xdc`
 
 **Key Features:**
 - Button control (BTNL/BTNR)
@@ -54,7 +44,6 @@ This project successfully implements:
 - Precise servo control via PWM
 - Intuitive button interface
 - Clear visual feedback
-- Modular VHDL architecture
 
 The system demonstrates effective FPGA-based motor control with potential for expansion to multiple servos and advanced control algorithms.
 
