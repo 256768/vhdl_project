@@ -48,8 +48,6 @@ This project successfully implements:
 - Intuitive button interface
 - Clear visual feedback
 
-The system demonstrates effective FPGA-based motor control with potential for expansion to multiple servos and advanced control algorithms.
-
 ## References
 1. Nexys A7 Reference Manual
 2. IEEE Standard VHDL Language Reference Manual
