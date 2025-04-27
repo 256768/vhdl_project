@@ -35,7 +35,8 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 - 1000-2000μs pulse width range
 
 ## Photo Documentation
-*(Actual photos would be inserted here showing:)*
+![image](https://github.com/user-attachments/assets/0769632b-5285-4661-9c39-ee50350c0bad)
+
 1. FPGA board with servo connection
 2. PWM signal measurements
 3. Servo at different positions
