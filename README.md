@@ -26,7 +26,7 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 1. `servo_controller.vhd` - Handles button inputs and pulse width adjustment
 2. `pwm_generator.vhd` - Generates 50Hz PWM signal
 3. `top_level.vhd` - Main entity connecting components
-4. `nexys-a7-50t.xdc`
+4. `nexys-a7-50t.xdc` - constraints file
 
 **Key Features:**
 - Button control (BTNL/BTNR)
