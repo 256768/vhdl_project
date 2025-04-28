@@ -31,16 +31,21 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 **Key Features:**
 - Button control (BTNL/BTNR)
 - LED status indicators
-- 100μs resolution adjustment
+- 100μs step adjustment
 - 1000-2000μs pulse width range
 
 ## Photo Documentation
-![image](https://github.com/user-attachments/assets/0769632b-5285-4661-9c39-ee50350c0bad)
 
-1. FPGA board with servo connection
-2. PWM signal measurements
-3. Servo at different positions
-4. LED feedback patterns
+![image](https://github.com/user-attachments/assets/e4fa4023-e745-453e-9cc3-4c6979350f24)
+- FPGA board - Nexys A7-50t
+
+
+[![image](https://github.com/user-attachments/assets/472040ae-10aa-4354-842a-43292110a0a9)](https://www.codeproject.com/Articles/513169/Servomotor-Control-with-PWM-and-VHDL)
+- Servo signal simulations
+
+
+![image](https://github.com/user-attachments/assets/2afccf1b-1572-4b56-bb81-2f4438c66164)
+- LED feedback and overall functionality
 
 ## Conclusion
 This project successfully implements:
