@@ -48,10 +48,15 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 - LED feedback and overall functionality
 
 ## Conclusion
-This project successfully implements:
-- Precise servo control via PWM
-- Intuitive button interface
-- Clear visual feedback
+Although we did not fully accomplish our initial objective of controlling multiple servomotors,we are overall pleased with the results.
+
+We managed to implement control for a single motor and achieved successful LED operation, with the motor able to rotate in one direction.
+
+Throughout the course of the project, we gained valuable technical experience, enhanced our problem-solving skills and strengthened our abilities to collaborate and manage tasks efficiently.
+
+This opportunity also broadened our knowledge of VHDL programming and taught us how to perform effectively under tight deadlines.
+
+Overall, the project provided important insights that will benefit us in future engineering projects.
 
 ## References
 1. Nexys A7 Reference Manual
