@@ -7,11 +7,11 @@
 - Šimon Kiripolský
 
 ## Assignment
-Develop a PWM-based servo motor controller using VHDL on FPGA that:
-- Generates 50Hz PWM signals (20ms period)
-- Adjusts pulse width (1000-2000μs) via buttons
-- Provides LED visual feedback
-- Controls standard servo motors
+- Develop a **servo motor controller** using **VHDL** on the **Nexys A7 FPGA board**
+- Generate **PWM signals** to control **servo motor angles**
+- Connect multiple servos using the **Pmod connectors**
+- Use **buttons or switches** to adjust servo positions
+- Provide **visual feedback** with LEDs to show status or position
 
 ## Theoretical Background
 
