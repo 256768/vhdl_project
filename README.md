@@ -87,7 +87,8 @@ Throughout the project, we gained valuable technical experience, improved our pr
 Overall, the project provided meaningful insights and skills that will benefit us in future engineering challenges.
 
 ## References
-1. Nexys A7 Reference Manual
-2. IEEE Standard VHDL Language Reference Manual
-3. "FPGA Prototyping by VHDL Examples" 
-4. SG90 Servo Motor Datasheet
+1. https://www.codeproject.com/Articles/513169/Servomotor-Control-with-PWM-and-VHDL
+2. Nexys A7 Reference Manual 
+3. IEEE Standard VHDL Language Reference Manual
+4. "FPGA Prototyping by VHDL Examples" 
+5. SG90 Servo Motor Datasheet
