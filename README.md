@@ -34,6 +34,36 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 - 100μs step adjustment
 - 1000-2000μs pulse width range
 
+## Code Review – `servo_controller.vhd`
+
+This is part of our simple servo motor controller designed for FPGA implementation.
+
+<img src="https://github.com/user-attachments/assets/b4e87b76-5fb4-4961-b759-d6465eeba1e5" alt="servo_controller" width="550" height="750" />
+
+
+- **Inputs**:
+  - `CLK`: Clock signal used to synchronize logic.
+  - `BTNL`, `BTNR`: Buttons to decrease/increase the PWM width.
+  
+- **Outputs**:
+  - `ENABLE`: Activates the servo when a button is pressed.
+  - `LED`: Displays a visual pattern depending on the button pressed.
+  - `PWM_WIDTH`: Integer output controlling the servo pulse width (range 1000–2000 µs).
+
+### How it works:
+- **Pulse width control**:
+  - If `BTNL` is pressed, the pulse width decreases by 100 (down to a minimum of 1000).
+  - If `BTNR` is pressed, the pulse width increases by 100 (up to a maximum of 2000).
+
+- **LED feedback**:
+  - Pressing `BTNL` shows `"11110000"` on LEDs.
+  - Pressing `BTNR` shows `"00001111"`.
+  - No buttons pressed = all LEDs off.
+
+- **PWM width output** (`PWM_WIDTH`) reflects the current `pulse_width`, which would be used in a separate PWM generator to control the servo motor.
+
+The design was intended to vary the servo's position based on button input but in practice the servo responds the same way to both `BTNL` and `BTNR`. 
+
 ## Photo Documentation
 
 ![image](https://github.com/user-attachments/assets/e4fa4023-e745-453e-9cc3-4c6979350f24)
@@ -48,15 +78,13 @@ PWM is a modulation technique where the width of electrical pulses is varied whi
 - LED feedback and overall functionality
 
 ## Conclusion
-Although we did not fully accomplish our initial objective of controlling multiple servomotors,we are overall pleased with the results.
+Although our original goal was to control multiple servomotors using PWM signals, we encountered issues that prevented full implementation. The servo motor responded the same way to both control buttons, suggesting that the PWM signal may not have matched the servo's requirements — potentially due to timing inaccuracies or insufficient resolution.
 
-We managed to implement control for a single motor and achieved successful LED operation, with the motor able to rotate in one direction.
+We attempted to identify the cause, but time constraints limited our ability to fully diagnose or resolve the issue. Despite this, we successfully implemented control for a single motor and achieved functional LED feedback, with the motor able to rotate in one direction.
 
-Throughout the course of the project, we gained valuable technical experience, enhanced our problem-solving skills and strengthened our abilities to collaborate and manage tasks efficiently.
+Throughout the project, we gained valuable technical experience, improved our problem-solving abilities, and learned how to collaborate effectively under pressure. This process also deepened our understanding of VHDL programming and gave us practical experience working on a hardware-based control system.
 
-This opportunity also broadened our knowledge of VHDL programming and taught us how to perform effectively under tight deadlines.
-
-Overall, the project provided important insights that will benefit us in future engineering projects.
+Overall, the project provided meaningful insights and skills that will benefit us in future engineering challenges.
 
 ## References
 1. Nexys A7 Reference Manual
