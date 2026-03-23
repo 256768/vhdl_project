@@ -1,10 +1,10 @@
 # VHDL Servo Controller Project
 
 ## Project Authors
-- Petr Křupka
-- Mikuláš Kolář  
-- Samuel Jánošík
-- Šimon Kiripolský
+- 256768
+- 256760  
+- 256745
+- 256756
 
 ## Assignment
 - Develop a **servo motor controller** using **VHDL** on the **Nexys A7 FPGA board**
